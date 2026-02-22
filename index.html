@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amresh Space - Explore the Universe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="themeSwitcher" class="theme-btn">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Header with Logo -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="img/rocket-logo.svg" alt="Amresh Space Rocket Logo" class="logo">
+            <h1 class="site-title">Amresh Space</h1>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/missions.html">Missions</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/dashboard.html">Space Dashboard</a></li>
+                <li><a href="pages/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Discover the Cosmos with Amresh Space</h2>
+            <p class="hero-subtitle">Your gateway to space exploration and astronomical wonders</p>
+            <a href="pages/dashboard.html" class="cta-button">Explore Live Data</a>
+        </div>
+        <div class="hero-animation">
+            <!-- Animated rocket will be added via CSS -->
+        </div>
+    </section>
+
+    <!-- Featured Content -->
+    <main class="container">
+        <section class="featured-section">
+            <h2 class="section-title">Latest Space Updates</h2>
+            <div class="featured-grid" id="featuredContent">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="quick-stats">
+            <div class="stat-card">
+                <h3>Total Missions</h3>
+                <p class="stat-number" id="totalMissions">150+</p>
+            </div>
+            <div class="stat-card">
+                <h3>Astronauts in Space</h3>
+                <p class="stat-number" id="astronautsInSpace">10</p>
+            </div>
+            <div class="stat-card">
+                <h3>Discovered Exoplanets</h3>
+                <p class="stat-number" id="exoplanets">5,000+</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Amresh Space. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
