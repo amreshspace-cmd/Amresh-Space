@@ -1,0 +1,41 @@
+// Theme Management
+class ThemeManager {
+    constructor() {
+        this.themeToggle = document.getElementById('themeSwitcher');
+        this.body = document.body;
+        this.init();
+    }
+
+    init() {
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        this.setTheme(savedTheme);
+
+        // Add event listener to theme toggle
+        if (this.themeToggle) {
+            this.themeToggle.addEventListener('click', () => this.toggleTheme());
+        }
+    }
+
+    setTheme(theme) {
+        this.body.classList.remove('light-theme', 'dark-theme');
+        this.body.classList.add(`${theme}-theme`);
+        
+        if (this.themeToggle) {
+            this.themeToggle.textContent = theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+        }
+        
+        localStorage.setItem('theme', theme);
+    }
+
+    toggleTheme() {
+        const currentTheme = this.body.classList.contains('dark-theme') ? 'dark' : 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        this.setTheme(newTheme);
+    }
+}
+
+// Initialize theme manager
+document.addEventListener('DOMContentLoaded', () => {
+    new ThemeManager();
+});
