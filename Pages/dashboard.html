@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Dashboard - Amresh Space</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeSwitcher" class="theme-btn">🌙 Dark Mode</button>
+    </div>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="../img/rocket-logo.svg" alt="Amresh Space Rocket Logo" class="logo">
+            <h1 class="site-title">Amresh Space</h1>
+        </div>
+        
+        <nav class="main-nav">
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="missions.html">Missions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="dashboard.html" class="active">Space Dashboard</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Space Dashboard</h1>
+        
+        <!-- Search and Filter Section -->
+        <section class="dashboard-controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search space objects...">
+                <button id="searchBtn">🔍 Search</button>
+            </div>
+            
+            <div class="filter-controls">
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="planets">Planets</option>
+                    <option value="stars">Stars</option>
+                    <option value="galaxies">Galaxies</option>
+                    <option value="missions">Missions</option>
+                </select>
+                
+                <select id="sortFilter">
+                    <option value="name">Sort by Name</option>
+                    <option value="distance">Sort by Distance</option>
+                    <option value="date">Sort by Date</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Dashboard Grid -->
+        <section class="dashboard-grid" id="dashboardGrid">
+            <!-- Data will be loaded dynamically -->
+        </section>
+
+        <!-- Loading Indicator -->
+        <div class="loading-spinner" id="loadingSpinner" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Amresh Space. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
