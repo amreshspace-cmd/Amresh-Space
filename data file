@@ -1,0 +1,49 @@
+{
+  "spaceObjects": [
+    {
+      "id": 1,
+      "name": "Mars",
+      "category": "Planet",
+      "distance": 227.9,
+      "description": "The Red Planet, fourth from the Sun. Home to the largest volcano in the solar system, Olympus Mons.",
+      "discoveryDate": "Ancient",
+      "mass": 0.107,
+      "diameter": 6779,
+      "temperature": -60,
+      "atmosphere": "Carbon Dioxide"
+    },
+    {
+      "id": 2,
+      "name": "Andromeda Galaxy",
+      "category": "Galaxy",
+      "distance": 2.537,
+      "description": "Nearest major galaxy to the Milky Way, on collision course with us in 4.5 billion years.",
+      "discoveryDate": "964",
+      "mass": "Unknown",
+      "diameter": 220000,
+      "stars": "1 trillion"
+    },
+    {
+      "id": 3,
+      "name": "Artemis Mission",
+      "category": "Mission",
+      "distance": 384400,
+      "description": "NASA mission to return humans to the Moon and establish sustainable exploration.",
+      "discoveryDate": "2024",
+      "mass": "N/A",
+      "crew": 4,
+      "duration": "30 days"
+    },
+    {
+      "id": 4,
+      "name": "Betelgeuse",
+      "category": "Star",
+      "distance": 642.5,
+      "description": "Red supergiant star in Orion constellation, expected to go supernova in next 100,000 years.",
+      "discoveryDate": "Ancient",
+      "mass": 20,
+      "temperature": 3500,
+      "type": "Red Supergiant"
+    }
+  ]
+}
