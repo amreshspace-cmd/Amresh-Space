@@ -1,7 +1,7 @@
 # Amresh-Space
 # 🚀 Amresh Space - Space Exploration Website
 ## 📋 Description
-Amresh Space is an interactive space exploration website that provides information about celestial bodies, space missions, and astronomical discoveries. The website features a modern, responsive design with dark/light theme support and real-time data visualization.
+Amresh Space is an interactive space exploration website that provides information about celestial bodies, space missions, and astronomical discoveries. 
 
 ## ✨ Features
 - Responsive Design - Works perfectly on all devices (320px to 1920px)
